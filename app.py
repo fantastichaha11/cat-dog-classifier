@@ -9,7 +9,7 @@ import torch.nn as nn
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 model = models.resnet18(weights=None)  # Load ResNet18 model without pre-trained weights
 model.fc = nn.Linear(in_features=512, out_features=2)
-model.load_state_dict(torch.load(r"model\ResNet18_CatDog_224_Norm.pth", map_location=DEVICE))  # Load your trained model
+model.load_state_dict(torch.load("model/ResNet18_CatDog_224_Norm.pth", map_location=DEVICE))  # Load your trained model
 model.to(DEVICE)
 model.eval()
 
