@@ -45,4 +45,7 @@ if uploaded_file is not None:
         label = class_names[predicted.item()]
 
     # Show result
-    st.success(f"Prediction: **{label}** 🎯")
+    if label == "Cat":
+        st.success(f"Prediction: Meow! It's a **{label}** 🐱")
+    else:
+        st.success(f"Prediction: Woof! It's a **{label}** 🐶")
