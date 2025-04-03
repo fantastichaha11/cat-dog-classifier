@@ -19,8 +19,8 @@ To run this Streamlit app locally, follow these steps:
 
 1. Clone the repository
 ```
-git clone https://github.com/your-username/cat-vs-dog-classifier.git
-cd cat-vs-dog-classifier
+git clone https://github.com/fantastichaha11/cat-dog-classifier.git
+cd cat-dog-classifier
 ```
 
 2. Create a virtual environment (optional but recommended)
